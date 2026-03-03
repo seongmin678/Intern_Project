@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EFE5"> <LinearLayout
+    android:id="@+id/windowControls"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <View
+        android:id="@+id/btnExit"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:background="@drawable/circle_dot"
+        android:backgroundTint="#FF6B6B"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:background="@drawable/circle_dot"
+        android:backgroundTint="#FFD93D"
+        android:layout_marginEnd="8dp" />
+
+    <View
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:background="@drawable/circle_dot"
+        android:backgroundTint="#6BCB77" />
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00.00"
+        android:textColor="#3E3E3E"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.dodam.analogueapp.HorizontalRecorderView
+        android:id="@+id/recorderView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnStopRecord"
+        app:layout_constraintTop_toBottomOf="@id/txtTimer" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStopRecord"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FF6B6B"
+        android:text="녹음 정지 및 저장"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
