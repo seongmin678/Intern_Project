@@ -5,7 +5,7 @@
 
 ## 🔗 Live Demo
 지금 바로 웹사이트를 확인해 보세요!
-👉 **[웹사이트 접속하기](https://seongmin678.github.io/club-website/)**
+👉 **[웹사이트 접속하기](https://seongmin678.github.io/club-website/)](https://seongmin678.github.io/Club_Website/)**
 *(파일 구조를 옮겼다면 변경된 링크를 넣어줘!)*
 
 ---
